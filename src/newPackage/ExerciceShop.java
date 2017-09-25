@@ -1,4 +1,4 @@
-package newPackage;
+package marie;
 
 
 import static org.testng.AssertJUnit.assertEquals;
