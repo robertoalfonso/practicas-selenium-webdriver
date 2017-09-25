@@ -1,9 +1,9 @@
-package marie;
+package maries;
 
 //NOTAS Y CORRECCIONES
 
-//Tuve que cambiar el xpath del producto porque por alguna razón ya no era el mismo que vos usaste.
-//Mañana cuando vengas vamos a buscar la forma de cambiar la forma de acceder a ese producto indiferentemente del id que tenga
+//Tuve que cambiar el xpath del producto porque por alguna razÃ³n ya no era el mismo que vos usaste.
+//MaÃ±ana cuando vengas vamos a buscar la forma de cambiar la forma de acceder a ese producto indiferentemente del id que tenga
 // ******** HAY QUE HACERLO ESTATICO ******
 
 // SE TENDRIA QUE HACER UN SOLO ASSERT, PORQUE SI CAMBIAN EL MENSAJE FALLARIA EL TEST
@@ -124,7 +124,7 @@ public class ExerciceShopv2 {
               String actualTitle = driver.getTitle();
               //System.out.println(actualTitle);
 
-              String expectedTitle = "Checkout – Demo Shopping site";
+              String expectedTitle = "Checkout â€“ Demo Shopping site";
               if (actualTitle.contentEquals(expectedTitle)) {
             	  System.out.println("");
                      System.out.println("* * * * Compra finalizada con exito * * * *");
