@@ -15,7 +15,7 @@ public class ShopSimonExcercise {
        public static void main(String[] args) {
              // declaration and instantiation of objects/variables
 
-             System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+             System.setProperty("webdriver.chrome.driver", "/practicas-selenium-webdriver/resources/chromedriver.exe");
              WebDriver driver = new ChromeDriver();
              String baseUrl = "http://store.demoqa.com";
              driver.get(baseUrl);
