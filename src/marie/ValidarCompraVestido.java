@@ -29,7 +29,7 @@ public class ValidarCompraVestido {
      public static void main(String[] args) throws InterruptedException {
 
     	 System.setProperty("webdriver.chrome.driver", "/practicas-selenium-webdriver/resources/chromedriver.exe");
-            //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+    	    //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
             WebDriver driver = new ChromeDriver();
             //conviene maximizar para asegurarse de encontrar los elementos
             driver.manage().window().maximize();
