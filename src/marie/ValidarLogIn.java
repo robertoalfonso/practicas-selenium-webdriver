@@ -3,7 +3,7 @@
 Hi Marie , 
  http://www.demo.guru99.com/V4/
 The following test case needs to be automated - LOG IN with valid credentials
-The client has requested you to use WebDriver (Firefox Driver) for the project.
+The client has requested you to use WebDriver (Firefox Driver) for the project. -- HACEMOS CON CHROME
 
 User ID : 	mngr98967
 Password : 	ynytehY 
