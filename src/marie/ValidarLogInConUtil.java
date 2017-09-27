@@ -9,19 +9,20 @@
 
 package marie;
 
-import static org.testng.AssertJUnit.assertEquals;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ValidarLogInConUtil {
+import misael.Utils;
 
-	public static void main(String[] args) throws InterruptedException {
+import static org.testng.Assert.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
+public class ValidarLogInConUtil implements Utils {
+	public static void main (String[] args) {
 		ChromeDriver driver = misael.Utils.initialize();
-
-		// explicit wait me hace esperar 20 de cada elemento
+		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		String uid = "mngr98967";
@@ -34,14 +35,11 @@ public class ValidarLogInConUtil {
 
 		driver.findElement(By.name("btnLogin")).click();
 
-		// Verify that the title is equal to a Welcome title and print it to
-		// screen
-		String title = driver.getTitle();
-		assertEquals("Guru99 Bank Manager HomePage", title);
-		System.out.println("* * * Login successful * * *");
-		System.out.println("Title of the HomePage: " + title);
-
+		//ESTO NO VALIDA, MEJOR FIJANDOSE QUE TIENE LOG OUT.
+		//assertEquals(driver.findElement(By.partialLinkText("out")).getText(), "Log out");
+		assertEquals(driver.findElement(By.partialLinkText("out")).getText().toString(), "Log out".toString());
+		System.out.println("Log in successful");
+		//assertEquals(driver.findElement(By.linkText("Log out")).getText(), "Log out");
 		driver.close();
 	}
-
 }
