@@ -16,6 +16,7 @@ public class ItemCostInCheckout {
 		String baseUrl = "http://store.demoqa.com/";
 		String username = "mmagi";
 		String password = "pph&f1HRWXeC@PnS";
+		driver.manage().window().maximize();
 		driver.get(baseUrl);
 
 		driver.findElement(By.id("account")).click();
