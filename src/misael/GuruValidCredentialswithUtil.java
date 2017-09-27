@@ -1,11 +1,10 @@
 package misael;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import static org.testng.AssertJUnit.assertEquals;
 import java.util.concurrent.TimeUnit;
 
-public class GuruSS1withUtil implements Utils {
+public class GuruValidCredentialswithUtil implements Utils {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		String userID = "mngr99072";

@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.testng.Assert.assertEquals;
 
-public class GuruSS1 {
+public class GuruBankValidCredentials {
 	public static void main (String[] args) {
 		String userID="mngr99072";
 		String pwd="ybEmeqA";

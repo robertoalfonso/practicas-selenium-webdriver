@@ -4,14 +4,14 @@ import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class GuruSS2 implements Utils{
+public class GuruValidPwd implements Utils{
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		String invalidUser="asd";
-		String invalidPwd="grge";
+		String validPwd="ybEmeqA";
 		String expectedAlert="User or Password is not valid";
 		ChromeDriver driver=Utils.initialize();
-		Utils.login(invalidUser, invalidPwd);
+		Utils.login(invalidUser, validPwd);
 		
 		assertEquals(driver.switchTo().alert().getText(), expectedAlert);
 		
