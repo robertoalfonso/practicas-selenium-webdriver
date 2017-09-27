@@ -8,20 +8,20 @@ import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.sun.deploy.uitoolkit.impl.fx.Utils;
+
 public class ValidarLogInConUtil {
 	
 	 public static void main(String[] args) throws InterruptedException {
+	ChromeDriver driver=misael.Utils.initialize();
 	
-	System.setProperty("webdriver.chrome.driver","/practicas-selenium-webdriver/resources/chromedriver.exe");
-    WebDriver driver = new ChromeDriver();
     
 	//conviene maximizar para asegurarse de encontrar los elementos
     driver.manage().window().maximize();
     //explicit wait me hace esperar 20 de cada elemento
     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     
-    String baseUrl = "http://www.demo.guru99.com/V4/";
-    driver.get(baseUrl);
+   
     
     String uid = "mngr98967";
     driver.findElement(By.name("uid")).clear();
