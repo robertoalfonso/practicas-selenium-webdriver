@@ -25,7 +25,6 @@ public class GuruBankLoginAlert {
 		ChromeDriver driver = Utils.initialize();
 		File file = new File(filePath + "\\" + fileName);
 
-
 		// Create an object of FileInputStream class to read excel file
 
 		FileInputStream inputStream = new FileInputStream(file);
@@ -84,7 +83,7 @@ public class GuruBankLoginAlert {
 				if (j == 1) {
 					pass = row.getCell(j).getStringCellValue().toString();
 				}
-				System.out.println(user+" || "+pass);
+				System.out.println(user + " || " + pass);
 			}
 			Utils.login(user, pass);
 			assertEquals(driver.switchTo().alert().getText(), expectedAlert);
