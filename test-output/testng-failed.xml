@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="misael.GuruBankLoginNG">
+      <class name="misael.GuruBankLoginMgrID">
         <methods>
-          <include name="f"/>
-          <include name="afterTest"/>
+          <include name="guruBankLoginMgrID" invocation-numbers="0"/>
         </methods>
-      </class> <!-- misael.GuruBankLoginNG -->
+      </class> <!-- misael.GuruBankLoginMgrID -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

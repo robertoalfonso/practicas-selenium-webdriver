@@ -1,8 +1,6 @@
 package misael;
 
 import org.testng.annotations.Test;
-import static org.testng.Assert.assertEquals;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,10 +11,10 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
-public class GuruBankLoginNG {
+public class GuruBankLoginAlertNG {
 
 	String filePath = System.getProperty("user.dir") + "\\src\\misael";
 	String fileName = "Credentials.xlsx";
@@ -93,7 +91,7 @@ public class GuruBankLoginNG {
 				System.out.println(user + " || " + pass);
 			}
 			Utils.login(user, pass);
-			assertEquals(driver.switchTo().alert().getText(), expectedAlert);
+			Assert.assertEquals(driver.switchTo().alert().getText(), expectedAlert);
 			driver.switchTo().alert().accept();
 		}
 	}
