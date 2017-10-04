@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33140" started-at="2017-09-29T22:17:11Z" finished-at="2017-09-29T22:17:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33140" started-at="2017-09-29T22:17:11Z" finished-at="2017-09-29T22:17:44Z">
+      <class name="misael.GuruBankLoginMgrID">
+        <test-method status="PASS" signature="guruBankLoginMgrID(java.lang.String, java.lang.String)[pri:0, instance:misael.GuruBankLoginMgrID@3a82f6ef]" name="guruBankLoginMgrID" duration-ms="15336" started-at="2017-09-29T19:17:11Z" data-provider="Credentials" finished-at="2017-09-29T19:17:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr99072]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ybEmeqA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guruBankLoginMgrID -->
+        <test-method status="PASS" signature="guruBankLoginMgrID(java.lang.String, java.lang.String)[pri:0, instance:misael.GuruBankLoginMgrID@3a82f6ef]" name="guruBankLoginMgrID" duration-ms="5799" started-at="2017-09-29T19:17:26Z" data-provider="Credentials" finished-at="2017-09-29T19:17:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asdas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ybEmeqA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guruBankLoginMgrID -->
+        <test-method status="PASS" signature="guruBankLoginMgrID(java.lang.String, java.lang.String)[pri:0, instance:misael.GuruBankLoginMgrID@3a82f6ef]" name="guruBankLoginMgrID" duration-ms="6298" started-at="2017-09-29T19:17:32Z" data-provider="Credentials" finished-at="2017-09-29T19:17:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr99072]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[asdasd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guruBankLoginMgrID -->
+        <test-method status="PASS" signature="guruBankLoginMgrID(java.lang.String, java.lang.String)[pri:0, instance:misael.GuruBankLoginMgrID@3a82f6ef]" name="guruBankLoginMgrID" duration-ms="5684" started-at="2017-09-29T19:17:38Z" data-provider="Credentials" finished-at="2017-09-29T19:17:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asdasd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[asdas]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guruBankLoginMgrID -->
+      </class> <!-- misael.GuruBankLoginMgrID -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
