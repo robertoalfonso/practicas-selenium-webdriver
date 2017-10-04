@@ -57,6 +57,12 @@ public class DropDown {
 		System.out.println("* * * Options list: * * * ");
 		for (int i = 0; i < size; i++) {
 			System.out.println(options.get(i).getText());
+			/*
+			 * if(sValue.equals("Antartica")){
+				oSelect.selectByIndex(i);
+				break;
+				}
+			 */
 			
 		}
 		try {
