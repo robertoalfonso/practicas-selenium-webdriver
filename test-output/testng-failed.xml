@@ -5,7 +5,7 @@
     <classes>
       <class name="misael.GuruBankLoginMgrID">
         <methods>
-          <include name="guruBankLoginMgrID" invocation-numbers="0"/>
+          <include name="guruBankLoginMgrID" invocation-numbers="1 2 3"/>
         </methods>
       </class> <!-- misael.GuruBankLoginMgrID -->
     </classes>

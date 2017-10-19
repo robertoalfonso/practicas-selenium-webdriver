@@ -3,6 +3,7 @@ package misael;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -18,7 +19,7 @@ public class GuruBankLoginMgrID {
 	}
 
 	@Test(dataProvider = "Credentials")
-	public void guruBankLoginMgrID(String user, String pass) {
+	public void guruBankLoginMgrID(String user, String pass) throws Exception {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://www.demo.guru99.com/V4/");
@@ -28,11 +29,12 @@ public class GuruBankLoginMgrID {
 		driver.findElement(By.name("btnLogin")).click();
 		// Utils.login(user, pass);
 		if (user == "mngr99072" & pass == "ybEmeqA") {
-			Assert.assertEquals(driver.findElement(By.xpath("//tr[3]/td")).getText(), "Manger Id : "+user);
+			Assert.assertEquals(driver.findElement(By.xpath("//tr[3]/td")).getText(), "Manger Id : " + user);
 		} else {
 			Assert.assertEquals(driver.switchTo().alert().getText(), expectedAlert);
 		}
-		driver.quit();// Closing the driver here since the test will be re ran with many credentials
+		Utils.takeSnapShot(driver, "C:\\practicas-selenium-webdriver\\test.png");
+		driver.close();// Closing the driver here since the test will be re ran with many credentials
 	}
 
 }
